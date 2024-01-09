@@ -1,37 +1,87 @@
 body {
-	background-color: rgb(134, 182, 193);
-	font-family: Futura,Trebuchet MS,Arial,sans-serif;
- }
+    background: linear-gradient(to right, #E0EAFC, #CFDEF3);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
 
 header {
-	text-align: center;
+    text-align: center;
+    padding: 20px 0;
 }
 
-i {
-	color: rgb(242, 225, 85);
+.heart-animation i {
+    color: #ff6b6b;
+    font-size: 2em;
+    animation: beat 1s ease infinite;
 }
 
-p {
-	font-size: 150%;
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-top: 10px;
+}
+
+.reminder-list p, .reminder-list ol {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.reminder-list ol li {
+    display: inline-block;
+    margin: 0 10px;
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+.reminder-list ol li i {
+    margin-right: 5px;
+    color: #4ecdc4;
+}
+
+.spotify-playlist {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-gallery figure {
+    text-align: center;
+}
+
+.image-gallery img {
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 figcaption {
-	text-align: center;
+    font-style: italic;
+    margin-top: 5px;
 }
 
 footer {
-	text-align: center;
+    background-color: #ff6b6b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1em;
 }
 
-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .image-gallery img {
+        max-width: 90%;
+    }
 }
