@@ -1,7 +1,15 @@
 body {
-    background: linear-gradient(to right, #E0EAFC, #CFDEF3);
+    background: linear-gradient(45deg, #FF0080, #FF8C00, #40E0D0);
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: #FFF;
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 header {
@@ -10,19 +18,15 @@ header {
 }
 
 .heart-animation i {
-    color: #ff6b6b;
+    color: #FFF;
     font-size: 2em;
-    animation: beat 1s ease infinite;
-}
-
-@keyframes beat {
-    0%, 100% { transform: scale(1); }
-    25% { transform: scale(1.2); }
+    text-shadow: 0 0 7px #FFF, 0 0 10px #FFF, 0 0 21px #FFF, 0 0 42px #FF0080, 0 0 82px #FF0080, 0 0 92px #FF0080, 0 0 102px #FF0080, 0 0 151px #FF0080;
 }
 
 h1 {
-    color: #ff6b6b;
+    color: #FFF;
     margin-top: 10px;
+    text-shadow: 2px 2px 5px #000;
 }
 
 .reminder-list p, .reminder-list ol {
@@ -35,11 +39,7 @@ h1 {
     margin: 0 10px;
     list-style-type: none;
     font-size: 1.1em;
-}
-
-.reminder-list ol li i {
-    margin-right: 5px;
-    color: #4ecdc4;
+    color: #FFF;
 }
 
 .spotify-playlist {
@@ -61,10 +61,11 @@ h1 {
 figcaption {
     font-style: italic;
     margin-top: 5px;
+    color: #FFF;
 }
 
 footer {
-    background-color: #ff6b6b;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 15px 0;
